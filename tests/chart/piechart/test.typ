@@ -80,3 +80,18 @@
             (value: 1, label: [Two], o: true)), slice-style: colors,
     value-key: "value", label-key: "label", outer-label: (content: "LABEL", radius: 150%), outset-key: "o")
 }))
+
+
+// Keys
+#box(stroke: 2pt + red, canvas({
+  piechart(((value: 1, label: [One]),
+            (value: 1, label: [Two],   o: 2%),
+            (value: 1, label: [Three], o: 4%),
+            (value: 1, label: [Four], o: 6%),
+            (value: 1, label: [Five], o: 8%),
+            (value: 1, label: [Six], o: 10%),
+            (value: 1, label: [Seven], o: 12%),
+            (value: 1, label: [Eight], o: 14%),),
+            slice-style: colors,
+    value-key: "value", label-key: "label", outer-label: (content: "LABEL", radius: 150%), outset-key: "o")
+}))
