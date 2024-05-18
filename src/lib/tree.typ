@@ -100,7 +100,7 @@
 /// - spread (float): Sibling spread factor
 /// - name (none,string): The tree elements name
 #let tree(
-  root, 
+  root,
   draw-node: auto,
   draw-edge: auto,
   direction: "down",
@@ -142,7 +142,7 @@
     } else {
       content = tree
     }
-    
+
     return (
       x: 0,
       y: depth * grow,

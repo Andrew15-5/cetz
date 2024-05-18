@@ -518,7 +518,7 @@
       let offset = vector.add(vector.scale(dir, distance), offset)
       let start = vector.add(low, offset)
       let end = vector.add(high, offset)
-        
+
       // Draw a major line
       if is-major and (kind == 1 or kind == 3) {
         draw.line(start, end, stroke: style.grid.stroke)

@@ -364,7 +364,7 @@
 }
 
 /// Shortens a path's segments by the given distances. The start of the path is shortened first by moving the point along the line towards the end. The end of the path is then shortened in the same way. When a distance is 0 no other calculations are made.
-/// 
+///
 /// - segments (segments): The segments of the path to shorten.
 /// - start-distance (int, float): The distance to shorten from the start of the path.
 /// - end-distance (int, float): The distance to shorten from the end of the path
@@ -387,7 +387,7 @@
     segments = segments.slice(index + 1)
     segments.insert(0,
       shorten-segment(
-        segment, 
+        segment,
         distance,
         mode: mode,
         samples: samples,
@@ -405,7 +405,7 @@
     segments = segments.slice(0, index - 1)
     segments.push(
       shorten-segment(
-        segment, 
+        segment,
         -distance,
         mode: mode,
         samples: samples,

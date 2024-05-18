@@ -36,7 +36,7 @@
     message: "Transformtion matrix must be of type array, got: " + repr(mat)
   )
   assert.eq(
-    mat.len(), 
+    mat.len(),
     4,
     message: "Transformation matrix must be of size 4x4, got: " + repr(mat)
   )
@@ -209,7 +209,7 @@
   )
 }
 
-/// Sets the previous coordinate. 
+/// Sets the previous coordinate.
 ///
 /// The previous coordinate can be used via `()` (empty coordinate).
 /// It is also used as base for relative coordinates if not specified
@@ -224,7 +224,7 @@
 /// - pt (coordinate): The coordinate to move to.
 #let move-to(pt) = {
   let t = coordinate.resolve-system(pt)
-  
+
   return (ctx => {
     let (ctx, pt) = coordinate.resolve(ctx, pt)
     return (ctx: ctx)
@@ -248,11 +248,11 @@
 
   return (ctx => {
     let bounds = vector.as-vec(bounds, init: (1, 1, 1))
-    
+
     let (ctx, from, to) = coordinate.resolve(ctx, from, to)
     let (fx, fy, fz) = from
     let (tx, ty, tz) = to
-    
+
     // Compute scaling
     let (sx, sy, sz) = vector.sub((tx, ty, tz),
                                   (fx, fy, fz)).enumerate().map(((i, v)) => if bounds.at(i) == 0 {

@@ -374,7 +374,7 @@
   },)
 }
 
-/// An advanced element that allows you to modify the current canvas context. 
+/// An advanced element that allows you to modify the current canvas context.
 ///
 /// A context object holds the canvas' state, such as the element dictionary,
 /// the current transformation matrix, group and canvas unit length. The following
